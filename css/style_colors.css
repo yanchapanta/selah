@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #0A1F34;
+    color: white;
+    width: 95%;
+    margin: auto;
+}
+.title{
+    text-align: center;
+}
+.campo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    border-radius: 13px;
+    border: 1px solid red ;
+    padding: .5em;
+    background-color: whitesmoke;
+}
+.campo p{
+    display: inline-block;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* boton showme*/
+.showNo{
+    opacity:0;
+
+}
+.showYes{
+    opacity: 1;
+    color: black;
+}
+/*modificando svg*/
+#imagen001 {
+   /* fill: red;*/
+  }
+.diagrama {
+   fill: red;
+  }
+/*Modificando botones centrales*/
+.wrap_btn{
+    position: relative;
+}
+.introduction-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btnAuto-container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 3px solid white;
+    padding: .5em;
+
+}
+.btnAuto{
+    margin: .3rem;
+    padding: 0.2em;
+    border-radius: 5px;
+    background-color: rgb(12, 12, 240);
+    color: white;
+    cursor: pointer;
+}.btnAuto-wrap1{
+    display: flex;
+    flex-direction: column;
+}
+.btnAuto:hover {
+    background-color: rgb(26, 26, 153);
+  }
+  .btnAuto:active {
+    background-color: rgb(20, 20, 94);
+  }
+.btn_container{
+    position: relative;
+    width: 62%;
+    
+    margin: auto;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn_container_central{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.btn_container  div  input{
+   
+    width: 195px;
+    height: 86px;
+    border-width: 0;
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: round;
+   
+    
+    
+}
+.btn_container  div{
+   
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+      
+    
+}
+.btn_container  div .btn_repeat_word{
+    background-color: pink;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btn_container  div .btn_repeat_word:hover{
+    background-color: red;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}
+.index001{
+    z-index: 3;
+}
+.index002{
+    z-index: 4;
+}
+.index003{
+    z-index: 5;
+}
+.btn_repeatEn{
+    background-color: transparent;
+    background-image:url("https://yanchapanta.github.io/idiomaEN/src/img/btn_repeatEn.svg");
+    background-repeat: no-repeat;
+     cursor:pointer;  
+
+    
+}
+.btn_repeatEs{
+    background-color: transparent;
+    background-image:url("https://yanchapanta.github.io/idiomaEN/src/img/btn_repeatEs.svg");
+    background-repeat: no-repeat;
+     cursor:pointer;  
+
+    
+}
+.btn_showMe{
+    background-color: transparent;
+    background-image:url("https://yanchapanta.github.io/idiomaEN/src/img/btn_en.svg");
+    background-repeat: no-repeat;
+     cursor:pointer;  
+    
+}
+.btn_nextEn{
+    background-color: transparent;
+    background-image:url("https://yanchapanta.github.io/idiomaEN/src/img/btn_nextToEn.svg");
+    background-repeat: no-repeat;
+     cursor:pointer;  
+    
+}
+.btn_nextEs{
+    background-color: transparent;
+    background-image:url("https://yanchapanta.github.io/idiomaEN/src/img/btn_nextToEs.svg");
+    background-repeat: no-repeat;
+     cursor:pointer;  
+    
+}
+
+.btn_spanish{
+    background-color: transparent;
+    background-image:url("https://yanchapanta.github.io/idiomaEN/src/img/btn_es.svg");
+    background-repeat: no-repeat;
+     cursor:pointer;  
+    
+}
+
+.btn_controls{
+    width: 50px;
+    height: 50px;
+}
+.btn_controls img{
+    width: 100%;
+}
+.btn_controls object{
+    z-index: 1;
+}
+
+/* btn_navigation BOTONES DE NAVAGACION*/
+.header {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn_navigation{
+    width: 40px;
+    height: 40px;
+    padding: 10px 0px 10px 0px;
+}
+.btn_navigation a{
+    display: block;
+    width: 100%;
+}
+.btn_navigation a img{
+    width: 100%;
+}
+/*animaciones */
+.img_animation{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+   z-index: -1;
+   border-radius: 50%;
+   
+    
+    background-repeat: no-repeat;
+    background-image: url("https://yanchapanta.github.io/idiomaEN/src/img/image_cerebro.png");
+    background-position: center;
+    background-size: auto;
+    background-origin: content-box;
+
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    /**
+    */
+}
+.num_random{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 90;
+   font-size: 7rem;
+   color: wheat;
+   border-radius: 50%;   
+   border: 7px solid red;
+   text-align: center;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;  
+   
+}
+.num_random:hover{
+    border: 6px double red;
+    color: wheat;
+    background-color: rgba(128, 255, 0, 0.267);
+
+}
+.auto_color{
+    
+}
+
+@keyframes example {
+    0%   {transform: rotate(0deg);}
+  25%  {transform: rotate(25deg);}
+  50%  {transform: rotate(50deg);}
+  75%  {transform: rotate(75deg);}
+  100% {transform: rotate(180deg);}
+  }
+  /*Palabra español he inglés*/
+  .wordSpanish,.wordEnglish{
+   
+    position: absolute;
+    display: block;
+    bottom: 0;
+    color: #9b1708;
+    right: 0;
+    margin: auto;
+    padding: 1rem;
+    cursor: pointer;
+}
+.wordEnglish:hover{
+    color: red;
+  }
+
+  /*
+  Tabla de Contenido de prases
+  */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: arial, sans-serif;
+    
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px 5px 5px 3px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    color: black;
+  }
+  /* boton para seleccinar el rango a estudiar*/
+  .fromTo{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    z-index: 8;
+}
+.fromTo-right{
+    top: 0;
+    left: auto;
+    right: 0;
+
+}
+  .fromTo_input_container{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 10px;
+}
+.fromTo input{
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+}
+.fromTo button{
+    border: 1px solid transparent;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #1B75BB;
+    color: white;
+  }
+.fromTo button:hover{
+    background-color: rgb(16, 16, 161);
+   
+  }
+.fromTo button:focus{
+    background-color: blue;
+   
+  }
+  .fromTo p{
+    padding: 0px 5px 0px 5px;
+  }
+
+  /* CONTADOR*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clock {
+    font-size: .9em;
+    text-shadow: -1px 0px 15px rgba(0,0,0,0.25);
+    color: lightgray;
+}
+
+.number {
+    display: inline-block;
+    width: 130px;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-shadow: -1px 0px 15px rgba(37, 27, 27, 0.25);
+    border: none;
+    color: lightgray;
+    background-color: transparent;
+
+}
+.numberWorld{
+    font-size: 0.5em ;
+    opacity: 0.8;
+}
+
+.buttons button {
+    margin: 0 7px;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+#play {
+    background-image: url('../src/img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#stop {
+    background-image: url('../src/img/stop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#play:active {
+    background-color: lightgreen;
+}
+
+#stop:active {
+    background-color: lightcoral;
+}
+
+  @media only screen and (max-width: 600px) {
+    .wrap_btn {
+        width: 383px;
+        
+    }
+    .btn_container  div  input {
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+    .btn_container {
+        height: 53vh;
+        height: 53vh;
+        /*z-index: -1;*/
+    }
+    .btn_container_central {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-between;
+    }
+    .num_random {
+        height: 25vw;
+        width:  25vw;
+        font-size: 5em;
+
+        
+    }
+    .img_animation {
+        height: 25vw;
+        width: 25vw;
+        z-index: 1;
+       
+    }
+    .fromTo {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+    }
+    .fromTo button{
+
+        width: 14px;
+    }
+    .fromTo_input_container {
+        font-size: .7em;
+       
+    }
+    .fromTo input {
+        font-size: .7em;
+       
+    }
+    /* configurando temporizzador*/
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+    .fromTo-right {
+        width: 21%;
+        left: inherit;
+        right: -14px;
+    }
+    .fromTo .fromTo_enviar{
+        width: 100px;
+    }
+    .container_clock{
+        border: 1px solid white;
+        border-radius: 10px;
+        z-index: 9;
+    }
+    .buttons button {
+        margin: 0 7px;
+        padding: 10px;
+        border: none;
+        border-radius: 50%;
+    }
+    #stop, #play {
+       
+        background-size: contain;
+    }
+    .clock {
+        font-size: 1.9em;  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;    
+    }
+    
+    .clock span{
+        font-size: .5em;
+    }
+    .fromTo input {
+        width: 35px;
+      
+    }
+    .campo {
+        display: flex;
+        justify-content: center;
+               font-size: .7em;
+               height: 49px;
+               padding: .5rem;
+               word-wrap: break-word;
+               overflow: break-word;
+            }
+    .campo, .campo input {
+        font-size: 1.2em;
+        word-wrap: break-word;
+        overflow: break-word;
+        height: auto;
+
+    }
+    .wordSpanish, .wordEnglish {
+        font-size: .5em;
+        padding: 5px;
+        
+    }
+    table {
+         border-collapse: collapse;
+        width: 100%;
+        font-size: 0.8em;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 2px;
+    }
+    textarea{
+        width: 80%;
+    }
+}
+.btn_sing {
+    background: linear-gradient(45deg, #ff6b6b, #ffa726);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: transform 0.2s;
+    width: 80px;
+    height: 40px;
+}
+
+.btn_sing:hover {
+    transform: scale(1.1);
+}
+
+.btn_sing:active {
+    transform: scale(0.95);
+}

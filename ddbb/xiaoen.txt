@@ -1,0 +1,162 @@
+const loveQuestions = [
+    [
+        1,
+        "Foundation",
+        "Fundamento",
+        "The foundation of love is mutual respect, trust, and commitment.",
+        "El fundamento del amor es el respeto mutuo, la confianza y el compromiso.",
+        "Ephesians 4:2-3"
+    ],
+    [
+        2,
+        "Communication",
+        "Comunicación",
+        "Communication is essential. Love requires understanding, listening, and expressing feelings honestly and kindly.",
+        "La comunicación es esencial. El amor requiere comprensión, escuchar y expresar sentimientos con honestidad y amabilidad.",
+        "Proverbs 15:1"
+    ],
+    [
+        3,
+        "Trust",
+        "Confianza",
+        "No, trust is a cornerstone of love. Without trust, a relationship cannot thrive or grow.",
+        "No, la confianza es una piedra angular del amor. Sin confianza, una relación no puede prosperar ni crecer.",
+        "1 Corinthians 13:7"
+    ],
+    [
+        4,
+        "Conflicts",
+        "Conflictos",
+        "Love seeks to resolve conflicts with patience, humility, and forgiveness. It doesn’t hold grudges.",
+        "El amor busca resolver los conflictos con paciencia, humildad y perdón. No guarda rencor.",
+        "Colossians 3:13"
+    ],
+    [
+        5,
+        "Patience",
+        "Paciencia",
+        "Patience is crucial. Love understands that growth takes time and that no one is perfect.",
+        "La paciencia es crucial. El amor entiende que el crecimiento toma tiempo y que nadie es perfecto.",
+        "1 Corinthians 13:4"
+    ],
+    [
+        6,
+        "Strength",
+        "Fuerza",
+        "Love stays strong through constant effort, appreciation, and choosing to love even on difficult days.",
+        "El amor se mantiene fuerte a través del esfuerzo constante, la apreciación y la decisión de amar incluso en los días difíciles.",
+        "Song of Solomon 8:7"
+    ],
+    [
+        7,
+        "Acceptance",
+        "Aceptación",
+        "No, love accepts the other person as they are while encouraging growth, but it doesn’t force change.",
+        "No, el amor acepta a la otra persona tal como es, mientras fomenta el crecimiento, pero no fuerza el cambio.",
+        "1 Peter 4:8"
+    ],
+    [
+        8,
+        "Actions",
+        "Acciones",
+        "Love is shown in everyday gestures like kindness, listening, and being there for each other.",
+        "El amor se muestra en gestos cotidianos como la amabilidad, escuchar y estar ahí el uno para el otro.",
+        "1 John 3:18"
+    ],
+    [
+        9,
+        "Infatuation",
+        "Enamoramiento",
+        "Infatuation is based on emotions, while love is a choice to commit and care for someone deeply.",
+        "El enamoramiento se basa en emociones, mientras que el amor es una elección para comprometerse y cuidar profundamente a alguien.",
+        "1 Corinthians 13:4-7"
+    ],
+    [
+        10,
+        "Differences",
+        "Diferencias",
+        "Love respects differences and finds ways to complement each other rather than compete.",
+        "El amor respeta las diferencias y encuentra maneras de complementarse en lugar de competir.",
+        "Romans 12:10"
+    ],
+    [
+        11,
+        "Sacrifice",
+        "Sacrificio",
+        "No, love often requires sacrifice, putting the other person’s needs above your own at times.",
+        "No, el amor a menudo requiere sacrificio, poniendo las necesidades del otro por encima de las propias en ocasiones.",
+        "John 15:13"
+    ],
+    [
+        12,
+        "Gratitude",
+        "Gratitud",
+        "Love expresses gratitude by appreciating the little things and saying “thank you” often.",
+        "El amor expresa gratitud apreciando las pequeñas cosas y diciendo “gracias” con frecuencia.",
+        "1 Thessalonians 5:18"
+    ],
+    [
+        13,
+        "Forgiveness",
+        "Perdón",
+        "Forgiveness is essential. Love doesn’t hold onto past mistakes but seeks to move forward together.",
+        "El perdón es esencial. El amor no se aferra a los errores del pasado, sino que busca avanzar juntos.",
+        "Ephesians 4:32"
+    ],
+    [
+        14,
+        "Jealousy",
+        "Celos",
+        "Love is not jealous. It trusts and celebrates the other person’s successes and happiness.",
+        "El amor no es celoso. Confía y celebra los éxitos y la felicidad del otro.",
+        "1 Corinthians 13:4"
+    ],
+    [
+        15,
+        "Growth",
+        "Crecimiento",
+        "Love grows stronger through shared experiences, overcoming challenges, and deepening emotional connection.",
+        "El amor se fortalece a través de experiencias compartidas, superando desafíos y profundizando la conexión emocional.",
+        "Ecclesiastes 4:9-12"
+    ],
+    [
+        16,
+        "Unconditional",
+        "Incondicional",
+        "Unconditional love means loving someone without expecting anything in return, even when it’s hard.",
+        "El amor incondicional significa amar a alguien sin esperar nada a cambio, incluso cuando es difícil.",
+        "Romans 5:8"
+    ],
+    [
+        17,
+        "Respect",
+        "Respeto",
+        "Love shows respect by valuing the other person’s opinions, feelings, and boundaries.",
+        "El amor muestra respeto valorando las opiniones, sentimientos y límites de la otra persona.",
+        "Philippians 2:3"
+    ],
+    [
+        18,
+        "Intimacy",
+        "Intimidad",
+        "Intimacy is important, but it’s more than physical. It’s about emotional closeness and vulnerability.",
+        "La intimidad es importante, pero va más allá de lo físico. Se trata de cercanía emocional y vulnerabilidad.",
+        "Hebrews 13:4"
+    ],
+    [
+        19,
+        "Distance",
+        "Distancia",
+        "True love endures distance by staying connected, trusting each other, and being faithful.",
+        "El amor verdadero soporta la distancia manteniéndose conectado, confiando el uno en el otro y siendo fiel.",
+        "Song of Solomon 3:4"
+    ],
+    [
+        20,
+        "Goal",
+        "Objetivo",
+        "The ultimate goal of love is to build a partnership that brings out the best in both people and creates a lasting bond.",
+        "El objetivo final del amor es construir una asociación que saque lo mejor de ambas personas y cree un vínculo duradero.",
+        "Ecclesiastes 4:12"
+    ]
+];

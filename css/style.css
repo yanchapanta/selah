@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://yanchapanta.github.io/idiomaEN/src/img/brain.webp");
+}
+.titleMain{
+    color: white;
+    text-align: center;
+}
+.wrapper {
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+}
+.btn_link {
+    align-items: center;
+    gap: 0 1rem;
+    font-weight: 600;
+    display: flex;
+    font-family: var(--primary-font);
+    border: 1px solid var(--logo-color,var(--theme-color));
+    color: #D2D6D7;
+    background: rgba(0, 0, 0, 0.473);
+    margin: .2em 0;
+    padding: .6em 1em;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: transform 50ms ease-in-out;
+}
+.btn_link:hover{
+    background: #9961d1;
+    border-color: #9961d1;
+    color: #000;
+}
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}

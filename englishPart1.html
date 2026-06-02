@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Part One </title>
+    <link rel="stylesheet" href="css/style_colors.css">
+    <link rel="icon" href="src/img/logo_book.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--
+    NÚMERO EN INGLÉS teamA
+    -->
+    <div class="header">
+        <div class="btn_navigation">
+                <a href="indexEnglishGramar.html">
+                <img src="https://yanchapanta.github.io/idiomaEN/src/img/btn_index_back.svg" alt="">
+            </a>
+        </div>
+        <h1 class="title">
+            <span id="totalList"></span>
+            English Part One
+        </h1>
+        <div class="btn_navigation">
+            <a href="indexEnglishGramar.html">
+                <img src="https://yanchapanta.github.io/idiomaEN/src/img/btn_index_next.svg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="campo">
+        <p disabled id="teamA_inputEN_phrase" class="showNo" >
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+      
+        <span id="teamA_wordEnglish" class="wordEnglish showNo">word English</span>
+    </div>
+    <div class="wrap_btn">
+        <div class="fromTo">
+            <div class="fromTo_input_container">
+                <input id="teamA_numStart" type="text" value="1">
+                <p>hasta</p>
+                <input id="teamA_numEnd" type="text" value="10">
+
+            </div>
+            <button onclick="fromToArea()">Enviar</button>
+        </div>
+        <div class="btn_container">
+            <div>
+                <input id="teamA_btn_repeat" class="btn_repeatEn" type="button">
+                <input id="teamA_btn_repeat_word" class="btn_repeat_word" type="text" value="word">
+            </div>
+            <div class="btn_container_central">
+                <input id="teamA_btn_showMe" class="btn_showMe" type="button">
+                <input id="teamA_btn_spanish" class="btn_spanish" type="button">
+            </div>
+            <div>
+                <input id="teamA_btn_next" class="btn_nextEn" type="button">
+
+            </div>
+            <div class="img_animation"></div>
+
+            <a id="teamA_num_random" class="num_random" href="#teamA_tablas">1</a>
+        </div>
+    </div>
+
+    <div class="campo">
+       
+        <p disabled id="teamA_inputES_phrase"  placeholder="Here Spanish">
+            
+        </p>
+        <span id="teamA_wordSpanish" class="wordSpanish">es</span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Contenido</h3>
+    <ul>
+        
+        <li>Del 1 al 10, To Be or Not to Be</li>
+        <li>Del 11 al 19, Adjectives Associated With The Senses</li>
+        <li>Del 20 al 34, Present Simple V. Present Continuous</li>
+
+        
+    </ul>
+
+
+    <table id="teamA_tablas">
+        <tr>
+            <th>N</th>
+            <th>Palabra Inglés </th>
+            <th>Palabra Español </th>
+            <th>Frase Inglés </th>
+            <th>Frase Español </th>
+            <th>Explicación</th>
+        </tr>
+    </table>
+
+
+
+
+    <script src="js/englishPart1.js" defer></script>
+    <br>
+    <br>
+    <br>
+    
+</body>
+
+</html>
