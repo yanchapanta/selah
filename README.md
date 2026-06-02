@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema de dictado inglés
 ## Manual
 ### Nivel Básico
@@ -11,3 +12,7 @@
 ### Nivel intermedio
 1. Si ya sabes lo que esta escrito, entoncs ya puedes considerar realizar las tres cosas, eschuchar, ya no tomar nota, sino eschuchar y pronunciar contantemente 
 2. Escoger rangos mas altos, es decir en 10 minutos 15 palabras
+=======
+# selah
+SELAH es una aplicación interactiva diseñada para ayudar a memorizar versículos y frases bíblicas mediante un sistema de repetición aleatoria, con música o pistas de fondo para crear un ambiente propicio para el aprendizaje y la meditación.
+>>>>>>> 3f424c96ae186738b8d614f352df1707b43189c4
