@@ -1,0 +1,28 @@
+ Subir tu código desde la terminal (recomendado)
+ # 1. Inicializa Git (si no lo has hecho)
+git init
+
+# 2. Agrega todos tus archivos
+git add .
+
+# 3. Crea el primer commit
+git commit -m "Primer commit: SELAH - sistema de memorización bíblica"
+
+# 4. Conecta con tu repositorio remoto
+git remote add origin https://github.com/TU-USUARIO/selah.git
+
+# 5. Sube tu código a la rama principal
+git branch -M main
+git push -u origin main
+
+Solución paso a paso para repositorio repetidos
+# 1. Trae los cambios del repositorio remoto y los fusiona
+git pull origin main --allow-unrelated-histories
+
+# 2. Si hay conflicto con el README, resuélvelo manualmente o sobrescribe
+#    Para conservar TU readme local:
+git checkout --ours README.md
+git add README.md
+
+# 3. Ahora sí, sube tus cambios
+git push -u origin main
