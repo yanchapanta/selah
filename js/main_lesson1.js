@@ -108,7 +108,7 @@ document.getElementById('teamA_btn_repeat_ES').addEventListener("click",()=>{
 
 document.getElementById('teamA_btn_repeat_word').addEventListener("click",()=>{
     teamA_wordToSpeak();
-    console.log()
+    
 });
 
 //BOTON MUESTRAME
@@ -424,10 +424,12 @@ let intervaloSiguiente;
 
 
 function btnAutoES(data){
+    let tiempoFraseFrase=calcularPausaAleatoria()+calcularNumeroCaracteresFrase();
+
     teamA_btn_autoES.addEventListener("click", ()=>{
         clearInterval(intervaloRepetir);
         clearInterval(intervaloSiguiente);
-        intervaloRepetir = setInterval(teamA_phraseToSpeak_ES, 15000);//1 segundo es 1000
+        intervaloRepetir = setInterval(teamA_phraseToSpeak_ES, tiempoFraseFrase);//1 segundo es 1000
         intervaloSiguiente = setInterval(() => {
             teamA_fila=document.getElementById(`teamA_fila${teamA_rowRamdon}`);    
     
@@ -479,10 +481,12 @@ function btnAutoES(data){
 }
 
 function btnAutoEN(data){
+    let tiempoFraseFrase=calcularPausaAleatoria()+calcularNumeroCaracteresFrase();
+
     teamA_btn_autoEN.addEventListener("click", ()=>{
         clearInterval(intervaloRepetir);
         clearInterval(intervaloSiguiente);
-        intervaloRepetir = setInterval(teamA_phraseToSpeak, 15000);//15 segundos
+        intervaloRepetir = setInterval(teamA_phraseToSpeak, tiempoFraseFrase);//15 segundos
         intervaloSiguiente = setInterval(() => {
             teamA_fila=document.getElementById(`teamA_fila${teamA_rowRamdon}`);    
     
@@ -549,6 +553,7 @@ async function useData() {
     totalList.textContent = data.length;
     
     console.log('Datos de la función:', data[0][2]);
+    
     showColumna(data);
     btnNext(data);
     btnNextES(data);
@@ -562,3 +567,20 @@ async function useData() {
     
 }
 
+
+// Configuración de los parámetros científicos
+const CONFIG = {
+  tiempoBloqueTotal: 180000, // 3 minutos por frase base
+  pausaMinima: 22000,        // 22 segundos de base para dar tiempo a la mente
+  pausaMaxima: 35000         // Hasta 35 segundos para romper la predicción
+};
+
+// Función para calcular un intervalo variable aleatorio entre los 22 y 35 segundos
+function calcularPausaAleatoria() {
+  return Math.floor(Math.random() * (CONFIG.pausaMaxima - CONFIG.pausaMinima + 1)) + CONFIG.pausaMinima;
+}
+calcularPausaAleatoria();
+function calcularNumeroCaracteresFrase(){
+    return teamA_inputEN_phrase.textContent.length
+}
+calcularNumeroCaracteresFrase();

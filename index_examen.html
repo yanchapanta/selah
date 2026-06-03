@@ -138,7 +138,6 @@
    
      <script src="js/timer.js"></script>
 
-
     <script src="js/main_lesson1.js" defer></script>
     <script>
         // Registrar Service Worker
@@ -146,6 +145,7 @@
         navigator.serviceWorker.register('./sw.js')
             .then(registration => console.log('SW registered'))
             .catch(error => console.log('SW registration failed'));
+
         }
     </script>
 </body>
