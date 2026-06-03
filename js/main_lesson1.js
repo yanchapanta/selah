@@ -424,7 +424,7 @@ let intervaloSiguiente;
 
 
 function btnAutoES(data){
-    let tiempoFraseFrase=calcularPausaAleatoria()+calcularNumeroCaracteresFrase();
+    let tiempoFraseFrase=calcularPausaAleatoria()*10+calcularNumeroCaracteresFrase();
 
     teamA_btn_autoES.addEventListener("click", ()=>{
         clearInterval(intervaloRepetir);
@@ -481,7 +481,7 @@ function btnAutoES(data){
 }
 
 function btnAutoEN(data){
-    let tiempoFraseFrase=calcularPausaAleatoria()+calcularNumeroCaracteresFrase();
+    let tiempoFraseFrase=calcularPausaAleatoria()*10+calcularNumeroCaracteresFrase();
 
     teamA_btn_autoEN.addEventListener("click", ()=>{
         clearInterval(intervaloRepetir);
