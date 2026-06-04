@@ -97,18 +97,7 @@
             <input id="teamA_btn_autoPausar" class="btnAuto" type="button" value="Pausar">
     
         </div>
-        <div class="container container_clock">
-            <!--
-            https://www.youtube.com/watch?v=-LbVgpqKuDw
-            -->
-            <div class="clock">
-                <input class="number" type="text" maxlength="2" value="00"><span>hs</span><input class="number" type="text" maxlength="2" value="00"><span>min</span><input class="number" type="text" maxlength="2" value="00"><span>sec</span>
-            </div>
-            <div class="buttons">
-                <button id="play" onclick="startTimer()"></button>
-                <button id="stop" onclick="stopTimer()"></button>
-            </div>
-        </div>
+       
        
     </div>
     <br>
@@ -132,10 +121,22 @@
             <th>Palabra Español </th>
             <th>Frase Inglés </th>
             <th>Frase Español </th>
-            <th>Explicación</th>
+            
         </tr>
     </table>
-   
+    <div class="container container_clock">
+            <!--
+            https://www.youtube.com/watch?v=-LbVgpqKuDw
+            -->
+            <div class="clock">
+                <input class="number" type="text" maxlength="2" value="00"><span>hs</span><input class="number" type="text" maxlength="2" value="00"><span>min</span><input class="number" type="text" maxlength="2" value="00"><span>sec</span>
+            </div>
+            <div class="buttons">
+                <button id="play" onclick="startTimer()"></button>
+                <button id="stop" onclick="stopTimer()"></button>
+            </div>
+        </div>
+        
      <script src="js/timer.js"></script>
 
     <script src="js/main_lesson1.js" defer></script>
