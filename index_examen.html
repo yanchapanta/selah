@@ -69,7 +69,7 @@
             </div>
             <div class="index003">
                 <input id="teamA_btn_next" class="btn_nextEn" type="button">
-                <input id="teamA_btn_nextES" class="btn_nextEs" type="button">
+              
 
             </div>
             <div class="img_animation"></div>
@@ -116,39 +116,20 @@
 
     <table id="teamA_tablas">
         <tr>
-            <th>N</th>
-            <th>Palabra Inglés </th>
-            <th>Palabra Español </th>
-            <th>Frase Inglés </th>
-            <th>Frase Español </th>
+            <th>N°</th>
+            <th>Palabra Inglés</th>
+            <th>Palabra Español</th>
+            <th>Frase Inglés</th>
+            <th>Frase Español</th>
             
         </tr>
     </table>
-    <div class="container container_clock">
-            <!--
-            https://www.youtube.com/watch?v=-LbVgpqKuDw
-            -->
-            <div class="clock">
-                <input class="number" type="text" maxlength="2" value="00"><span>hs</span><input class="number" type="text" maxlength="2" value="00"><span>min</span><input class="number" type="text" maxlength="2" value="00"><span>sec</span>
-            </div>
-            <div class="buttons">
-                <button id="play" onclick="startTimer()"></button>
-                <button id="stop" onclick="stopTimer()"></button>
-            </div>
-        </div>
-        
-     <script src="js/timer.js"></script>
+ 
+
+   
 
     <script src="js/main_lesson1.js" defer></script>
-    <script>
-        // Registrar Service Worker
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js')
-            .then(registration => console.log('SW registered'))
-            .catch(error => console.log('SW registration failed'));
-
-        }
-    </script>
+    
 </body>
 
 </html>
